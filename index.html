@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchPad Live — Programming Courses</title>
+  <meta name="description" content="LaunchPad Live — practical front-end programming courses. See what's open, follow the roadmap, and sign up." />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER=========== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-dot"></span>
+        LaunchPad <span class="brand-accent">Live</span>
+      </a>
+
+      
+      <nav class="desktop-nav d-none d-md-flex" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#courses">Courses</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#signup" class="btn btn-signup d-none d-md-flex">Sign Up</a>
+
+     
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input d-md-none">
+      <label for="menu-toggle" class="hamburger d-md-none" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+     
+      <nav class="mobile-drawer d-md-none" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#courses">Courses</a>
+        <a href="#faq">FAQ</a>
+        <a href="#signup" class="btn btn-signup w-100 mt-2">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+      <!-- ============ HERO======= -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <span class="badge-eyebrow">Programming Courses</span>
+            <h1 class="hero-title">Front-End Sprint launching soon.</h1>
+            <p class="hero-sub">Practical learning paths, expert-designed sessions, and a supportive pace that fits your week.</p>
+ 
+            <div class="hero-alert d-flex align-items-start gap-2">
+              <i class="bi bi-info-circle"></i>
+              <span>Want priority access? Join the list below. The live countdown is available inside the Front-End card.</span>
+            </div>
+ 
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#courses" class="btn btn-outline-hero">Browse Courses</a>
+              <a href="#signup" class="btn btn-primary-hero">Sign Up</a>
+            </div>
+ 
+            <p class="hero-footnote">Flexible schedule &bull; Guided support &bull; Certificate of completion</p>
+          </div>
+ 
+          <div class="col-lg-6">
+            <div class="hero-art-wrap">
+              <div class="hero-art">
+                <img src="images/5.jpg" alt="Students learning to code together" class="hero-img" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+    <!-- ========== ABOUT======== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-6">
+            <h2 class="section-title">Built for real progress.</h2>
+            <p class="section-lead">Clear goals each week, supportive reviews, and small wins that add up.</p>
+
+            <div class="row g-3 mt-2 feature-grid">
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <i class="bi bi-bullseye"></i>
+                  <h3>Weekly focus</h3>
+                  <p>Stay on track with one outcome at a time.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <i class="bi bi-hammer"></i>
+                  <h3>Hands-on practice</h3>
+                  <p>Short tasks that translate into real skills.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <i class="bi bi-chat-heart"></i>
+                  <h3>Mentor tips</h3>
+                  <p>Friendly guidance at key milestones.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-tile">
+                  <i class="bi bi-check2-circle"></i>
+                  <h3>Visible progress</h3>
+                  <p>Simple checklists to celebrate progress.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="stats-card">
+              <div class="stats-row">
+                <div class="stat">
+                  <span class="stat-num">2-3h</span>
+                  <span class="stat-label">weekly time</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">4 weeks</span>
+                  <span class="stat-label">course span</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">Yes</span>
+                  <span class="stat-label">certificate</span>
+                </div>
+              </div>
+              <blockquote class="testimonial">
+                <i class="bi bi-quote"></i>
+                <p>“Great pacing and outcomes I could actually finish.”</p>
+                <cite>— Learner feedback</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= ROADMAP ======= -->
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <h2 class="section-title">Roadmap</h2>
+        <p class="section-lead">A simple four-step path from first steps to finished skills.</p>
+
+        <ol class="roadmap-list">
+          <li class="roadmap-step">
+            <span class="step-num">1</span>
+            <div class="step-body">
+              <h3>Foundations</h3>
+              <p>Get oriented, set goals, and start strong.</p>
+              <span class="step-meta">~2h &bull; Week 1</span>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-num">2</span>
+            <div class="step-body">
+              <h3>Practice</h3>
+              <p>Guided exercises to build fluency.</p>
+              <span class="step-meta">~3h &bull; Week 2</span>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-num">3</span>
+            <div class="step-body">
+              <h3>Application</h3>
+              <p>Apply your skills to a small real project.</p>
+              <span class="step-meta">~3h &bull; Week 3</span>
+            </div>
+          </li>
+          <li class="roadmap-step">
+            <span class="step-num">4</span>
+            <div class="step-body">
+              <h3>Review</h3>
+              <p>Wrap-up and next steps.</p>
+              <span class="step-meta">~2h &bull; Week 4</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======= COURSES======= -->
+    <section class="courses" id="courses">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end flex-wrap gap-2">
+          <h2 class="section-title mb-0">Courses</h2>
+          <span class="slider-hint">Swipe &bull; drag &bull; dots</span>
+        </div>
+
+        <div class="course-slider mt-4">
+          <button class="slider-arrow slider-prev" aria-label="Previous course">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+          <div class="slider-viewport">
+            <div class="slider-track" id="sliderTrack">
+
+              <!-- Slide 1-->
+          <article class="slide">
+            <div class="course-visual html-visual">
+              <img src="images/images.png" alt="HTML Basics course" class="visual-img" loading="lazy">
+              <div class="visual-tags">
+                <span>Content</span>
+                <span>Structural</span>
+              </div>
+            </div>
+            <div class="course-info">
+              <div class="badge-row">
+                <span class="badge status-published">Published</span>
+                <span class="badge-topic">Front-End</span>
+              </div>
+              <h3>HTML Basics</h3>
+              <p>Learn the building blocks of every web page, from structure to accessibility.</p>
+              <div class="course-cta">
+                <span class="days-left-badge" data-course="HTML Basics">Days Left</span>
+                <a href="#signup" class="btn btn-enroll">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 2-->
+          <article class="slide">
+            <div class="course-visual css-visual">
+              <img src="images/images (1).png" alt="CSS Mastery course" class="visual-img" loading="lazy">
+              <div class="visual-tags">
+                <span>Style</span>
+                <span>Presentational</span>
+              </div>
+            </div>
+            <div class="course-info">
+              <div class="badge-row">
+                <span class="badge status-in-progress">In Progress</span>
+                <span class="badge-topic">Front-End</span>
+              </div>
+              <h3>CSS Mastery</h3>
+              <p>Flexbox, Grid, and responsive design patterns for real interfaces.</p>
+              <div class="course-cta">
+                <span class="days-left-badge" data-course="CSS Mastery">Days Left</span>
+                <a href="#signup" class="btn btn-enroll">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide3 -->
+          <article class="slide">
+            <div class="course-visual js-visual">
+              <img src="images/2.jpg" alt="JavaScript Fundamentals course" class="visual-img" loading="lazy">
+              <div class="visual-tags">
+                <span>Behavioral</span>
+              </div>
+            </div>
+            <div class="course-info">
+              <div class="badge-row">
+                <span class="badge status-not-started">Not Started</span>
+                <span class="badge-topic">Front-End</span>
+              </div>
+              <h3>JavaScript Fundamentals</h3>
+              <p>Variables, logic, DOM, and the core skills behind every interactive page.</p>
+              <div class="course-cta">
+                <span class="days-left-badge" data-course="JavaScript Fundamentals">Days Left</span>
+                <a href="#signup" class="btn btn-enroll">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide4  -->
+          <article class="slide">
+            <div class="course-visual react-visual">
+              <img src="images/3.png" alt="React Basics course" class="visual-img" loading="lazy">
+              <div class="visual-tags">
+                <span>Components</span>
+                <span>State</span>
+              </div>
+            </div>
+            <div class="course-info">
+              <div class="badge-row">
+                <span class="badge status-in-progress">In Progress</span>
+                <span class="badge-topic">Front-End</span>
+              </div>
+              <h3>React Basics</h3>
+              <p>Build interactive UIs with components, props, and state.</p>
+              <div class="course-cta">
+                <span class="days-left-badge" data-course="React Basics">Days Left</span>
+                <a href="#signup" class="btn btn-enroll">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!--     Slide 5 -->
+          <article class="slide">
+            <div class="course-visual node-visual">
+              <img src="images/4.png" alt="Node.js Essentials course" class="visual-img" loading="lazy">
+              <div class="visual-tags">
+                <span>Server</span>
+                <span>APIs</span>
+              </div>
+            </div>
+            <div class="course-info">
+              <div class="badge-row">
+                <span class="badge status-not-started">Not Started</span>
+                <span class="badge-topic">Back-End</span>
+              </div>
+              <h3>Node.js Essentials</h3>
+              <p>Build servers and APIs with Node.js, from routing to data handling.</p>
+              <div class="course-cta">
+                <span class="days-left-badge" data-course="Node.js Essentials">Days Left</span>
+                <a href="#signup" class="btn btn-enroll">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+
+            </div>
+          </div>
+
+          <button class="slider-arrow slider-next" aria-label="Next course">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <!-- === SIGN UP ========== -->
+    <section class="signup" id="signup">
+      <div class="container">
+        <h2 class="section-title">Sign Up</h2>
+        <p class="section-lead">Join the list to receive updates and enrollment details.</p>
+
+        <form class="signup-form" novalidate>
+          <fieldset>
+            <legend>Your details</legend>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Full name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Jane Doe" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@email.com" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="course" class="form-label">Course</label>
+                <select class="form-select" id="course">
+                  <option selected>HTML Basics (Published)</option>
+                  <option>CSS Mastery (In Progress)</option>
+                  <option>JavaScript Fundamentals (Not Started)</option>
+                  <option>React Basics (In Progress)</option>
+                  <option>Node.js Essentials (Not Started)</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="seats" class="form-label">Seats</label>
+                <input type="number" class="form-control" id="seats" min="1" value="1">
+              </div>
+              <div class="col-md-3">
+                <label for="startDate" class="form-label">Preferred start</label>
+                <input type="date" class="form-control" id="startDate">
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label">Message (optional)</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Any note or preference..."></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-actions d-flex align-items-center gap-3 flex-wrap">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <a href="#courses" class="back-link">Back to Courses</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======FAQ======= -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Do I need prior experience to join?</summary>
+            <p>No. Each course starts from the fundamentals and builds up gradually, with guided practice along the way.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How much time should I set aside each week?</summary>
+            <p>Most learners spend about 2–3 hours per week across four weeks, though you can move at your own pace.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will I get a certificate?</summary>
+            <p>Yes. Every learner who completes the roadmap receives a certificate of completion.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What happens if a course is "Coming Soon"?</summary>
+            <p>You can still sign up early. You'll be added to the priority list and notified as soon as seats open.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I switch courses after signing up?</summary>
+            <p>Yes, just mention it in the message field on the sign-up form and our team will follow up by email.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======FOOTER======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-dot"></span>
+          LaunchPad <span class="brand-accent">Live</span>
+        </a>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links row gy-3">
+        <div class="col-6 col-md-3">
+          <h4>Explore</h4>
+          <a href="#about">About</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#courses">Courses</a>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4>Support</h4>
+          <a href="#faq">FAQ</a>
+          <a href="#signup">Sign Up</a>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LaunchPad Live. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
